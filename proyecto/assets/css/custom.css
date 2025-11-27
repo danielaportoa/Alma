@@ -135,7 +135,7 @@ h5,
   object-fit: cover; /* Asegura que rellene el cuadrado */
   max-width: 60px; /* Tamaño máximo para la imagen del logo */
 }
-/*Se aplica css custom para solucionar alineacion de imagen y textos (col-base) en elk footer*/
+/*Se aplica css custom para solucionar alineacion de imagen y textos (col-base) en el footer*/
 .col-base {
   align-items: flex-end;
 }
