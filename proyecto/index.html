@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alma | Cremas naturales.</title>
-    
+    <!--   script de funcionalidades -->
+    <script src="./assets/js/js.js"></script>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -18,15 +19,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
 <body>
     <!-- 1. ENCABEZADO (HEADER) -->
     <nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
         <div class="container">
             <!-- Izquierda: Logo -->
-            <a class="navbar-brand" href="#inicio">Alma</a>
+            <a class="navbar-brand" href="#inicio"><img class="navbar-brand-img" src="./assets/img/logo_alma.png" alt="logo alma"></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -74,7 +75,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <span class="hero-subtitle">Cosmética Natural </span>
+                    <span class="hero-subtitle span-margen-top">Cosmética Natural </span>
                     <h1 class="hero-title">Conexión con la<br><span class="text-terracota fst-italic">naturaleza</span><br>en tu piel</h1>
                     <p class="lead mb-4">Descubre el poder de los ingredientes botánicos puros. Productos artesanales que nutren tu piel y respetan el planeta.</p>
                     <div class="d-flex gap-3">
@@ -154,11 +155,12 @@
                 </div>
 
                 <!-- Producto 3: Exfoliante -->
+                 <!-- se agregan imagenes a carpeta assets/img -->
                 <div class="col-md-4 product-col" data-title="exfoliante corporal cuerpo">
                     <article class="product-card">
                         <div class="product-image-wrapper">
                             <span class="category-tag">Cuerpo</span>
-                            <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                            <img src="./assets/img/crema-sachet-grande.avif" 
                                  alt="Exfoliante Corporal"
                                  onerror="this.src='https://placehold.co/600x600?text=Exfoliante'">
                         </div>
@@ -170,7 +172,7 @@
                                     data-id="3" 
                                     data-name="Exfoliante Corporal" 
                                     data-price="18990"
-                                    data-img="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80">
+                                    data-img="./assets/img/crema-sachet.avif">
                                     Agregar
                                 </button>
                             </div>
@@ -286,12 +288,18 @@
     <!-- 6. PIE DE PÁGINA (FOOTER) -->
     <footer>
         <div class="container">
-            <div class="row gy-4">
+             <!-- Se aplica css custom para solucionar alinclear
+              giteacion de imagen y textos (col-base)-->
+            <div class="row gy-4 col-base">
                 <!-- Columna 1: Marca y Newsletter -->
                 <div class="col-lg-4">
-                    <h3 style="font-family: var(--font-titulo); color: var(--color-terracota);">El Alma</h3>
+                     <img
+                        src="./assets/img/alma_logo_full.png"
+                        class="img-fluid w-50 mb-3"
+                        alt="logo full"
+                    />
                     <p class="small text-white-50 mb-4">Cosmética natural de lujo que conecta tu piel con la naturaleza. Productos artesanales elaborados en Chile.</p>
-                    
+                   
                     <h6 class="text-white mb-3">Recibe Ofertas Exclusivas</h6>
                     <form class="d-flex">
                         <input type="email" class="form-control newsletter-input" placeholder="Tu email...">
