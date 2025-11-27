@@ -135,7 +135,7 @@ h5,
   object-fit: cover; /* Asegura que rellene el cuadrado */
   max-width: 60px; /* Tamaño máximo para la imagen del logo */
 }
-/*Se aplica css custom para solucionar alineacion de imagen y textos (col-base)*/
+/*Se aplica css custom para solucionar alineacion de imagen y textos (col-base) en elk footer*/
 .col-base {
   align-items: flex-end;
 }
@@ -166,7 +166,7 @@ h5,
   content: "";
   position: absolute;
   bottom: 0;
-  left: 20%; /* Empezamos desde el centro */
+  left: 5%; /* Empezamos desde el centro */
   transform: translateX(-50%);
   width: 0%; /* Ancho inicial 0 */
   height: 2px;
