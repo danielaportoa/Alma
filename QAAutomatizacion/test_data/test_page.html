@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Prueba QA - Bootcamp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .nav-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .nav-links a {
+            margin: 0 15px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #764ba2;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        #submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            flex: 1;
+        }
+        
+        #submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        #show-alert {
+            background: #f39c12;
+            color: white;
+        }
+        
+        #show-alert:hover {
+            background: #e67e22;
+        }
+        
+        #change-color {
+            background: #3498db;
+            color: white;
+        }
+        
+        #change-color:hover {
+            background: #2980b9;
+        }
+        
+        .box {
+            padding: 30px;
+            background-color: #e8f4f8;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.5s;
+        }
+        
+        #success-message {
+            display: none;
+            background: #2ecc71;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .items {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .items li {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        
+        .items li:hover {
+            transform: translateX(10px);
+        }
+        
+        .info-section {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Página de Prueba QA</h1>
+        <p class="subtitle">Framework de Automatización - Bootcamp 2024</p>
+        
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="form-section">
+            <h2 style="margin-bottom: 20px; color: #667eea;">📝 Formulario de Contacto</h2>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                    <span class="error" id="name-error">Por favor ingresa un nombre</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <span class="error" id="email-error">Por favor ingresa un email válido</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <span class="error" id="message-error">Por favor ingresa un mensaje</span>
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit" id="submit-btn">Enviar Formulario</button>
+                </div>
+            </form>
+            
+            <div id="success-message">
+                ✅ ¡Formulario enviado exitosamente!
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button id="show-alert">Mostrar Alerta</button>
+            <button id="change-color">Cambiar Color del Box</button>
+        </div>
+        
+        <div class="box">
+            <h3>📦 Box Interactivo</h3>
+            <p>Este box puede cambiar de color al presionar el botón</p>
+        </div>
+        
+        <div class="info-section">
+            <h3 style="margin-bottom: 10px;">ℹ️ Elementos de Prueba</h3>
+            <ul class="items">
+                <li>✨ Elemento 1 - Hover para ver efecto</li>
+                <li>🚀 Elemento 2 - Totalmente interactivo</li>
+                <li>🎯 Elemento 3 - Listo para testing</li>
+                <li>💎 Elemento 4 - UI/UX mejorado</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Manejo del formulario
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Validación simple
+            let isValid = true;
+            
+            if (name.trim() === '') {
+                document.getElementById('name-error').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('name-error').style.display = 'none';
+            }
+            
+            if (email.trim() === '' || !email.includes('@')) {
+                document.getElementById('email-error').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('email-error').style.display = 'none';
+            }
+            
+            if (message.trim() === '') {
+                document.getElementById('message-error').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('message-error').style.display = 'none';
+            }
+            
+            if (isValid) {
+                // Mostrar mensaje de éxito
+                document.getElementById('success-message').style.display = 'block';
+                
+                // Ocultar después de 3 segundos
+                setTimeout(() => {
+                    document.getElementById('success-message').style.display = 'none';
+                    document.getElementById('contact-form').reset();
+                }, 3000);
+            }
+        });
+        
+        // Botón de alerta
+        document.getElementById('show-alert').addEventListener('click', function() {
+            alert('¡Hola! Esta es una alerta de prueba para QA Automation 🎉');
+        });
+        
+        // Botón de cambiar color
+        const colors = ['#e8f4f8', '#ffe8e8', '#e8ffe8', '#fff4e8', '#f0e8ff'];
+        let currentColorIndex = 0;
+        
+        document.getElementById('change-color').addEventListener('click', function() {
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+            document.querySelector('.box').style.backgroundColor = colors[currentColorIndex];
+        });
+        
+        // Efecto en los links de navegación
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Navegando a:', this.textContent);
+            });
+        });
+    </script>
+</body>
+</html>

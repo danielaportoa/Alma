@@ -1,0 +1,17 @@
+# Framework de Testing
+pytest==7.4.3
+pytest-html==4.1.1
+
+# Playwright
+playwright==1.40.0
+pytest-playwright==0.4.3
+
+# Utilidades
+Pillow==10.1.0
+requests==2.31.0
+
+# Reportes avanzados (opcional)
+allure-pytest==2.13.2
+
+# Calidad de código
+pytest-cov==4.1.0
