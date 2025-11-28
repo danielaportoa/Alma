@@ -23,3 +23,5 @@
 ### Botón de contacto
 
 - [ ] Botones de contacto (whatsapp, fono, email) no tienen funcionalidad
+
+. Punto para salvar al repositorio
