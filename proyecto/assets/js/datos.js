@@ -33,7 +33,7 @@ export const Productos = [  // variable publica
         precio: 15990,
         descripcion: "Con retinol suave para actuar mientras duermes",
         imagen: "./assets/img/nocturna.png",
-        stock: 0,
+        stock: 2,
         categoria: "rostro"
     },
     {

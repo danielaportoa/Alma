@@ -1,1 +1,2 @@
 TEST INICIAL
+El trabajo de un UX Researcher (Investigador/a de Experiencia de Usuario) consiste en entender profundamente a las personas que usan un producto o servicio, para que las decisiones de diseño se basen en evidencia real y no en suposiciones. Su rol es clave para crear experiencias que sean útiles, usables y significativas.

@@ -1,0 +1,66 @@
+La metodología ágil es una forma de trabajar (especialmente en desarrollo de software y gestión de proyectos) que prioriza la rapidez, la flexibilidad y el trabajo en equipo por encima de la burocracia y la planificación rígida a largo plazo.
+
+En lugar de intentar entregar un proyecto gigante y perfecto al final de un año (como se hacía antes), en Agile divides el proyecto en trozos pequeños y vas entregando partes funcionales cada pocas semanas.
+
+Aquí te detallo los puntos clave para entenderla a fondo:
+
+1. La Filosofía Central (El "Mindset")
+No es una regla estricta, es una mentalidad basada en el Manifiesto Ágil, que valora:
+
+Individuos e interacciones sobre procesos y herramientas.
+
+Software (o producto) funcionando sobre documentación extensiva.
+
+Colaboración con el cliente sobre negociación de contratos.
+
+Respuesta ante el cambio sobre seguir un plan preestablecido.
+
+2. ¿Cómo funciona en la práctica?
+En lugar de un plan lineal (Cascada o Waterfall) donde haces A -> B -> C -> Fin, en Agile trabajas en ciclos iterativos (bucles):
+
+Planificas un poquito (para 2 semanas, por ejemplo).
+
+Diseñas y construyes.
+
+Pruebas.
+
+Entregas esa pequeña parte al cliente.
+
+Recibes feedback y mejoras para el siguiente ciclo.
+
+3. Los "Sabores" (Marcos de trabajo) más comunes
+"Agile" es el paraguas, pero existen varias formas de aplicarlo. Las más famosas son:
+
+Scrum: Es el más estructurado.
+
+Trabajas en ciclos fijos llamados Sprints (usualmente de 2 semanas).
+
+Hay roles definidos: Scrum Master (facilitador), Product Owner (voz del cliente) y el Equipo.
+
+Tienen reuniones diarias de 15 minutos (Dailies) para sincronizarse.
+
+Kanban: Es más visual y fluido (muy usado en fábricas y soporte técnico).
+
+Usas un tablero con columnas (Pendiente -> En Progreso -> Hecho).
+
+No hay "Sprints" fijos; el objetivo es que las tareas fluyan de izquierda a derecha sin atascarse.
+
+Se enfoca en no sobrecargar al equipo ("Work In Progress" limitado).
+
+XP (Extreme Programming): Enfocado puramente en la calidad técnica del código (programación en parejas, pruebas automáticas constantes).
+
+4. ¿Por qué todo el mundo la usa? (Beneficios)
+Menos Riesgo: Si te equivocas, te das cuenta a las 2 semanas, no al final del proyecto cuando ya gastaste todo el presupuesto.
+
+Cliente Feliz: El cliente ve avances constantes y puede pedir cambios sobre la marcha.
+
+Calidad: Al probar constantemente, hay menos errores ("bugs") acumulados al final.
+
+Resumen
+Imagina que vas a pintar un cuadro.
+
+Método Tradicional: Haces un boceto completo, mezclas todos los colores, pintas todo el lienzo y se lo muestras al cliente al final. Si no le gusta, tienes que empezar de cero.
+
+Método Ágil: Pintas una esquina, se la muestras al cliente. ¿Le gusta? Sigues con el centro. ¿No le gusta? Corriges esa esquina y sigues.
+
+¿Te interesa esto para gestionar un equipo, para aprender a programar, o para algún proyecto personal? (Dependiendo de tu respuesta, te puedo recomendar si usar Scrum, Kanban o simplemente aplicar los principios básicos).
