@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Cormorant Garamond (Serif) y Lato (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+<body>
+
+<div class="container confirmation-container d-flex align-items-center justify-content-center">
+    <div class="card card-custom text-center p-4 p-md-5">
+        
+        <!-- Icono de Éxito -->
+        <div class="icon-circle">
+            <!-- Icono Check de Lucide -->
+            <i data-lucide="check" style="color: white; width: 40px; height: 40px;"></i>
+        </div>
+
+        <!-- Título Principal -->
+        <h1 class="mb-3" style="color: var(--color-primary); font-weight: bold;">
+            ¡Gracias por tu compra!
+        </h1>
+        
+        <!-- Mensaje de Confirmación -->
+        <p class="lead mb-4">
+            Tu pedido ha sido procesado con éxito y se está preparando.
+        </p>
+
+        <!-- Detalles del Pedido -->
+        <div class="p-3 bg-light rounded mb-4 text-start">
+            <h5 class="mb-3" style="color: var(--color-primary);">Resumen del Pedido</h5>
+            <p class="mb-1 small"><strong>Número de Pedido:</strong> <span class="float-end">#ALM-836291</span></p>
+            <p class="mb-1 small"><strong>Fecha de Compra:</strong> <span class="float-end">15 de Septiembre, 2025</span></p>
+            <p class="mb-0 small"><strong>Total Pagado:</strong> <span class="float-end">$98.50 USD</span></p>
+        </div>
+
+        <p class="mb-4">
+            Recibirás un correo electrónico de confirmación con los detalles y el número de seguimiento en breve.
+        </p>
+
+        <!-- Botones de Acción -->
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-4">
+            <a href="index.html" class="btn btn-custom-primary text-uppercase">
+                Continuar Comprando
+            </a>
+            <a href="index.html#cartOffcanvas" class="btn btn-custom-secondary text-uppercase">
+                Ver Detalles del Pedido
+            </a>
+        </div>
+
+        <!-- Enlaces Adicionales (Imitando la navegación) -->
+        <div class="footer-links small">
+            <a href="#" class="mx-2">Rastrea tu pedido</a> | 
+            <a href="#" class="mx-2">Contacto</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Script para inicializar los iconos de Lucide -->
+<script>
+    lucide.createIcons();
+</script>
+    <!--   script de funcionalidades -->
+    <script type="module" src="./assets/js/conexion.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+    <!-- nodejs -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

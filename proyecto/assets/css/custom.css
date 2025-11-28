@@ -1,12 +1,18 @@
 /* --- CUSTOM CSS PARA ALMA --- */
 /* --- VARIABLES DE COLOR (Según PDF) --- */
 :root {
+  /* Variables base del proyecto */
   --color-terracota: #4ac48b;
   --color-verde-oliva: #7a8b69;
   --color-crema: #faf8f5;
   --color-texto: #3d3d3d;
   --font-titulo: "Cormorant Garamond", serif;
   --font-cuerpo: "Lato", sans-serif;
+
+  /* --- VARIABLES ADICIONALES PARA LOGIN Y CONFIRMACIÓN --- */
+  --color-login-primary: #8a5a44; /* Tono terroso/rojo para botones/enlaces de login */
+  --color-login-success: #5aa469; /* Verde para el checkmark de éxito de compra */
+  --color-login-button-hover: #a17869; /* Hover para login */
 }
 
 html {
@@ -573,4 +579,92 @@ footer a:hover {
   .hero-image-container {
     margin-top: 2rem;
   }
+}
+
+/* --- 10. ESTILOS DE MÓDULOS ESPECÍFICOS (Login/Confirmación) --- */
+
+/* 10.1 Estilos generales de Login y Confirmación */
+.login-container, .confirmation-container {
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+.card-custom {
+    border: none;
+    border-radius: 1.5rem; /* Usando 1.5rem de la página de Compra, más suave */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); 
+    max-width: 600px;
+    margin: auto;
+}
+
+/* 10.2 Estilos de Login */
+.image-side {
+    /* Estilo para la imagen lateral del login. */
+    background-color: var(--color-crema); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 1rem 1rem 0; /* Un poco menos redondeado que la card */
+    min-height: 500px;
+}
+.form-control:focus {
+    /* Usando el color principal del login como foco */
+    border-color: var(--color-login-primary);
+    box-shadow: 0 0 0 0.25rem rgba(138, 90, 68, 0.25);
+}
+
+
+/* 10.3 Botones unificados */
+.btn-custom {
+    /* Botón primario de Login */
+    background-color: var(--color-login-primary);
+    border-color: var(--color-login-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: var(--color-login-button-hover);
+    border-color: var(--color-login-button-hover);
+    color: white;
+}
+/* El botón de la compra exitosa (.btn-custom-primary) es esencialmente el mismo que .btn-custom, 
+   se usa un selector combinado para ambos: */
+.btn-custom-primary, .btn-custom {
+    background-color: var(--color-login-primary);
+    border-color: var(--color-login-primary);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón secundario/outline de Compra Exitosa y link de Crear Cuenta */
+.btn-custom-secondary {
+    border: 1px solid var(--color-login-primary);
+    color: var(--color-login-primary);
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.btn-custom-secondary:hover {
+    background-color: var(--color-crema); 
+    color: var(--color-login-primary);
+}
+.footer-links a {
+    color: var(--color-login-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* 10.4 Estilos de Confirmación de Compra */
+.icon-circle {
+    background-color: var(--color-login-success);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
 }
